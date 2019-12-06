@@ -1,0 +1,25 @@
+.container-questions {
+    width: 800px;
+    max-width: 80%;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-group-vertical {
+    gap: 10px;
+    margin: 20px 0;
+
+}
+
+.btn {
+    gap: 10px;
+    margin: 20px 0;
+}
+.start-btn {
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    font-color: white;
+}
