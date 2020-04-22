@@ -1,22 +1,3 @@
-var timeEl = document.querySelector(".time");
-var secondsLeft = 76;
-
-
-function setTime() {
-    var timerInterval = setInterval(function() {
-      secondsLeft--;
-      timeEl.textContent = "Time left: " + secondsLeft;
-
-      if(secondsLeft === 0) {
-        clearInterval(timerInterval);
-      }
-  
-    }, 1000);
-    
-  }
-setTime();
-
-
 var questions = [
   {
   title: "Is this coding bootcamp hard?",
@@ -48,6 +29,30 @@ questionNumber = 0;
 var questionDiv = document.querySelector("#question")
 questionDiv.textContent = questions[questionNumber].title
 
+var choiceDiv = document.querySelector("#choicesA")
+choiceDiv.textContent = questions[0].choices[0]
+// choiceDiv.textContent = questions[1].choices[1]
+// choiceDiv.textContent = questions[questionNumber].choices[2]
+// choiceDiv.textContent = questions[questionNumber].choices[3]
+
+var choiceDiv = document.querySelector("#choicesB")
+choiceDiv.textContent = questions[0].choices[1]
+// choiceDiv.textContent = questions[questionNumber].choices[1]
+// choiceDiv.textContent = questions[questionNumber].choices[2]
+// choiceDiv.textContent = questions[questionNumber].choices[3]
+
+var choiceDiv = document.querySelector("#choicesC")
+choiceDiv.textContent = questions[0].choices[2]
+// choiceDiv.textContent = questions[questionNumber].choices[1]
+// choiceDiv.textContent = questions[questionNumber].choices[2]
+// choiceDiv.textContent = questions[questionNumber].choices[3]
+
+var choiceDiv = document.querySelector("#choicesD")
+choiceDiv.textContent = questions[0].choices[3]
+// choiceDiv.textContent = questions[questionNumber].choices[1]
+// choiceDiv.textContent = questions[questionNumber].choices[2]
+// choiceDiv.textContent = questions[questionNumber].choices[3]
+
 var nextButton = document.querySelector("#next-btn")
 nextButton.addEventListener("click", function() {
   if (questionNumber < questions.length - 1) {
@@ -56,8 +61,3 @@ nextButton.addEventListener("click", function() {
   questionDiv.textContent = questions[questionNumber].title
 }) 
 
-var choiceADiv = document.querySelector("#choice a")
-choiceADiv.textContent = questions[questionNumber].choice[0]
-choiceADiv.textContent = questions[questionNumber].choice[1]
-choiceADiv.textContent = questions[questionNumber].choice[2]
-choiceADiv.textContent = questions[questionNumber].choice[3]
