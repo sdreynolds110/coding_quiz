@@ -31,13 +31,13 @@ questionDiv.textContent = questions[questionNumber].title
 
 var choiceDiv = document.querySelector("#choicesA")
 choiceDiv.textContent = questions[0].choices[0]
-// choiceDiv.textContent = questions[1].choices[1]
+choiceDiv.textContent = questions[1].choices[0]
 // choiceDiv.textContent = questions[questionNumber].choices[2]
 // choiceDiv.textContent = questions[questionNumber].choices[3]
 
 var choiceDiv = document.querySelector("#choicesB")
 choiceDiv.textContent = questions[0].choices[1]
-// choiceDiv.textContent = questions[questionNumber].choices[1]
+choiceDiv.textContent = questions[1].choices[1]
 // choiceDiv.textContent = questions[questionNumber].choices[2]
 // choiceDiv.textContent = questions[questionNumber].choices[3]
 
